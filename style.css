@@ -1,0 +1,120 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ background: #0056b3;
+}
+.calculator {
+  width: 300px;
+  background-blend-mode: darken;
+  background-color: #dedbdb;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: #333;
+}
+
+.paragraph {
+  font: italic;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+#display {
+  width: 100%;
+  height: 100px;
+  text-align: right;
+  font-size: 1.6em;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+ background-image: url(jp_n.jpg);
+  color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffea00;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bench {
+  background-image: url(John.png);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+button.operator {
+  background-color: #28a745;
+}
+
+button.clear {
+  background-color: #dc3545;
+}
+
+button.delete {
+  background-color: #ffc107;
+  color: #333;
+}
+
+button.equals {
+  background-color: #17a2b8;
+  grid-column: span 2;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.operator:hover {
+  background-color: #218838;
+}
+
+button.clear:hover {
+  background-color: #c82333;
+}
+
+button.delete:hover {
+  background-color: #e0a800;
+}
+
+button.equals:hover {
+  background-color: #138496;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
